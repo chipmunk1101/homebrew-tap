@@ -15,6 +15,7 @@ cask "crumb" do
     regex(/Crumb[._-]v?(\d+(?:\.\d+)+)[._-]apple[._-]silicon\.pkg/i)
   end
 
+  auto_updates true
   depends_on macos: :monterey
 
   pkg "Crumb-#{version}-#{arch}.pkg"
